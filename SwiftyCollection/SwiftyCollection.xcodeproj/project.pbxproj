@@ -12,6 +12,7 @@
 		E1A0E17025A63A4900866703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A0E16F25A63A4900866703 /* Assets.xcassets */; };
 		E1A0E17325A63A4900866703 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A0E17225A63A4900866703 /* Preview Assets.xcassets */; };
 		E1A0E17C25A6591200866703 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0E17B25A6591200866703 /* Recipe.swift */; };
+		E1A0E18025A65FEB00866703 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0E17F25A65FEB00866703 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E1A0E17225A63A4900866703 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1A0E17425A63A4900866703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A0E17B25A6591200866703 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E1A0E17F25A65FEB00866703 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E1A0E16B25A63A4900866703 /* SwiftyCollectionApp.swift */,
 				E1A0E16D25A63A4900866703 /* ContentView.swift */,
 				E1A0E17B25A6591200866703 /* Recipe.swift */,
+				E1A0E17F25A65FEB00866703 /* RecipeCell.swift */,
 				E1A0E16F25A63A4900866703 /* Assets.xcassets */,
 				E1A0E17425A63A4900866703 /* Info.plist */,
 				E1A0E17125A63A4900866703 /* Preview Content */,
@@ -144,6 +147,7 @@
 				E1A0E17C25A6591200866703 /* Recipe.swift in Sources */,
 				E1A0E16E25A63A4900866703 /* ContentView.swift in Sources */,
 				E1A0E16C25A63A4900866703 /* SwiftyCollectionApp.swift in Sources */,
+				E1A0E18025A65FEB00866703 /* RecipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

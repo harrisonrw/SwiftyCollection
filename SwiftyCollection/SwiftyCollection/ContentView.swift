@@ -26,21 +26,7 @@ struct ContentView: View {
             ScrollView {
                 LazyVGrid(columns: gridItemLayout, spacing: 20) {
                     ForEach(recipes, id: \.self) { recipe in
-                        
-                        VStack {
-                            Spacer()
-                            HStack(alignment: .top) {
-                                Spacer()
-                                Text(recipe.title)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                Spacer()
-                            }
-                            Spacer()
-                        }
-                        .background(Color(.blue))
-                        
-                        
+                        RecipeCell(recipe: recipe)
                     }
                 }
                 .padding(15)
