@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var recipes = [ "Spaghetti & Meatballs", "Baked Lemon Chicken", "Chicken Parmesan", "Shrimp Stir Fry", "Blueberry Pancakes", "Grilled Salmon", "Breakfast Burrito" ]
+    private var recipes = [
+        Recipe(title: "Spaghetti & Meatballs", image: "", isFavorite: false),
+        Recipe(title: "Baked Lemon Chicken", image: "", isFavorite: false),
+        Recipe(title: "Chicken Parmesan", image: "", isFavorite: false),
+        Recipe(title: "Shrimp Stir Fry", image: "", isFavorite: false),
+        Recipe(title: "Blueberry Pancakes", image: "", isFavorite: false),
+        Recipe(title: "Grilled Salmon", image: "", isFavorite: false),
+        Recipe(title: "Breakfast Burrito", image: "", isFavorite: false)
+    ]
     
     private var gridItemLayout = [ GridItem(.flexible()), GridItem(.flexible())]
     
@@ -23,7 +31,7 @@ struct ContentView: View {
                             Spacer()
                             HStack(alignment: .top) {
                                 Spacer()
-                                Text(recipe)
+                                Text(recipe.title)
                                     .foregroundColor(.white)
                                     .padding()
                                 Spacer()
