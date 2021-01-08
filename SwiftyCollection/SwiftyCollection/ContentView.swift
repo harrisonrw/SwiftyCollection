@@ -10,21 +10,24 @@ import SwiftUI
 struct ContentView: View {
     
     private var recipes = [
-        Recipe(title: "Spaghetti & Meatballs", image: "", isFavorite: false),
-        Recipe(title: "Baked Lemon Chicken", image: "", isFavorite: false),
-        Recipe(title: "Chicken Parmesan", image: "", isFavorite: false),
-        Recipe(title: "Shrimp Stir Fry", image: "", isFavorite: false),
-        Recipe(title: "Blueberry Pancakes", image: "", isFavorite: false),
-        Recipe(title: "Grilled Salmon", image: "", isFavorite: false),
-        Recipe(title: "Breakfast Burrito", image: "", isFavorite: false)
+        Recipe(title: "Spaghetti & Meatballs", image: "spaghetti-meatballs", isFavorite: false),
+        Recipe(title: "Baked Lemon Chicken", image: "baked-lemon-chicken", isFavorite: false),
+        Recipe(title: "Chicken Parmesan", image: "chicken-parmesan", isFavorite: false),
+        Recipe(title: "Shrimp Stir Fry", image: "shrimp-stir-fry", isFavorite: false),
+        Recipe(title: "Blueberry Pancakes", image: "blueberry-pancakes", isFavorite: false),
+        Recipe(title: "Grilled Salmon", image: "grilled-salmon", isFavorite: false),
+        Recipe(title: "Breakfast Burrito", image: "breakfast-burrito", isFavorite: false)
     ]
     
-    private var gridItemLayout = [ GridItem(.flexible()), GridItem(.flexible())]
+    private var gridItemLayout = [
+        GridItem(.flexible(), spacing: 15),
+        GridItem(.flexible(), spacing: 15)
+    ]
     
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                LazyVGrid(columns: gridItemLayout, spacing: 15) {
                     ForEach(recipes, id: \.self) { recipe in
                         RecipeCell(recipe: recipe)
                     }
